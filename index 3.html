@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanetCom - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style 3.css">
+
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header>
+        <nav>
+            <div class="logo">PlanetCom</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#planetcom">PlanetCom</a></li>
+                <li><a href="index.html#accomplissements">Accomplissements</a></li>
+                <li><a href="index 2.html">Services</a></li>
+                <li><a href="index 3.html">Contact</a></li>
+            </ul>
+            <a href="index 3.html" class="cta-btn">Devenir client</a>
+        </nav>
+    </header>
+
+    <section class="hero-contact">
+        <h1>Contactez-nous</h1>
+        <p>Nous sommes à votre écoute. N'hésitez pas à nous contacter pour toute demande d'information ou de devis.</p>
+    </section>
+
+    <!-- Section Carte Google Maps -->
+    <section class="map-section">
+        <div class="map-container">
+            <!-- Google Maps iframe pour Abidjan, Cocody Riviera Palmeraie II -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1536.1860058393513!2d-3.939962!3d5.3619606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ed51f7f647a9%3A0x1e6d2e4179fce0c9!2sPLANETCOM%20SARL!5e1!3m2!1sfr!2sci!4v1764517124590!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <div class="contact-container">
+        <div class="contact-form-section">
+            <h2>📧 Envoyez-nous un message</h2>
+
+            <div id="successMessage" class="success-message">
+                ✅ Message envoyé avec succès ! Nous vous recontacterons bientôt.
+            </div>
+
+            <div id="errorMessage" class="error-message">
+                ❌ Erreur lors de l'envoi. Veuillez réessayer ou nous contacter par téléphone.
+            </div>
+            
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                
+                <!-- Access Key Web3Forms configuré -->
+                <input type="hidden" name="access_key" value="78f78982-ae05-4369-a649-b20da1f9b8fa">
+                
+                <!-- Configuration Web3Forms -->
+                <input type="hidden" name="subject" value="Nouveau message depuis le site PlanetCom">
+                <input type="hidden" name="from_name" value="Site Web PlanetCom">
+                <input type="hidden" name="redirect" value="false">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom">Nom complet *</label>
+                        <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="entreprise">Entreprise</label>
+                        <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre entreprise">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone *</label>
+                        <input type="tel" id="telephone" name="telephone" required placeholder="+225 XX XX XX XX XX">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service concerné</label>
+                    <select id="service" name="service">
+                        <option value="">Sélectionnez un service</option>
+                        <option value="ingenierie">Ingénierie</option>
+                        <option value="drive-test">Drive Test & Optimisation</option>
+                        <option value="genie-civil">Génie Civil</option>
+                        <option value="deploiement">Déploiement de sites radio</option>
+                        <option value="fibre">Réseaux fibre optique</option>
+                        <option value="energie">Energie</option>
+                        <option value="audit">Audit & Réhabilitation pylône</option>
+                        <option value="commercial">Agent commercial</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Envoyer le message</button>
+            </form>
+        </div>
+
+        <div class="contact-info-section">
+            <div class="contact-card">
+                <h3><span>📍</span> Nos coordonnées</h3>
+                
+                <div class="contact-item">
+                    <div class="contact-item-icon">🏢</div>
+                    <div class="contact-item-content">
+                        <h4>Siège social</h4>
+                        <p>Côte d'Ivoire - Abidjan, Cocody Riviera Palmeraie II</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-icon">📮</div>
+                    <div class="contact-item-content">
+                        <h4>Boîte Postale</h4>
+                        <p>01 BP 13403 Abidjan 01</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-icon">📧</div>
+                    <div class="contact-item-content">
+                        <h4>Email</h4>
+                        <p>planetcom01@yahoo.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h3><span>📞</span> Nos numéros</h3>
+                
+                <div class="contact-item">
+                    <div class="contact-item-icon">CI</div>
+                    <div class="contact-item-content">
+                        <h4>Côte d'Ivoire</h4>
+                        <p>+225 27 22 43 98 18<br>+225 07 08 37 13 13<br>+225 05 05 01 63 63</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-icon">TG</div>
+                    <div class="contact-item-content">
+                        <h4>Togo</h4>
+                        <p>+228 98 96 14 91</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-icon">BN</div>
+                    <div class="contact-item-content">
+                        <h4>Bénin</h4>
+                        <p>+229 65 66 56 28</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PlanetCom</h4>
+                <p>Votre partenaire de confiance pour la télécommunication en Côte d'Ivoire.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">🦋</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Telecom</a></li>
+                    <li><a href="#">Genie Civil & Energie</a></li>
+                    <li><a href="#">Agent Commercial</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Liens Utiles</h4>
+                <ul>
+                    <li><a href="index.html#accueil">Accueil</a></li>
+                    <li><a href="index.html#planetcom">PlanetCom</a></li>
+                    <li><a href="index.html#accomplissements">Accomplissements</a></li>
+                    <li><a href="index 2.html">Services</a></li>
+                    <li><a href="index 3.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 Côte d'Ivoire - Abidjan, Cocody Riviera Palmeraie II</li>
+                    <li>✉️ Boîte Postale : 01 BP 13403 Abidjan 01</li>
+                    <li>📞Côte d'ivoire: +225 27 22 43 98 18 / +225 07 08 37 13 13 / +225 05 05 01 63 63</li>
+                    <li>📞Togo: +228 98 96 14 91</li>
+                    <li>📞Bénin: +229 65 66 56 28</li>
+                    <li>📧 <br>planetcom01@yahoo.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 PlanetCom. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script 3.js"></script>
+
+</body>
+</html>

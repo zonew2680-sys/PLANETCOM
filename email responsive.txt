@@ -1,0 +1,7 @@
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="78f78982-ae05-4369-a649-b20da1f9b8fa">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
